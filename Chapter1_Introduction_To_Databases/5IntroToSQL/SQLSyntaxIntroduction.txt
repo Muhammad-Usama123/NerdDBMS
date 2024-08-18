@@ -1,0 +1,82 @@
+SQL Syntax And SubSets:
+
+    // 1) Create a database and tables using the DDL subset of SQL...
+    // 2) Utilize the DML subset of SQL to populate and modify data in a database...
+    // 3) Read and query data within databases using the DQL subset of SQL...
+
+        // Creating a college database: only brief demonstration
+
+            Step 1:
+
+                // Create a Database:
+
+                    // CREATE DATABASE database_name;
+
+                // Create a College Database:
+
+                    // CREATE DATABASE college;
+
+            // Step 2:
+
+                // Create tables:
+
+                    // CREATE TABLE table_name;
+
+                // Create A Table In College Database:
+
+                    // CREATE TABLE Student; // This table will hold information on each student...
+
+            // Step 3:
+
+                // Add Data To A Table: Populate the table of data
+
+                    // DML:
+
+                        INSERT INTO table_name 
+                        (column_one, column_two, column_three, ...)
+
+                        VALUES (value1, value2, value3, ...);
+
+                            // Inserts rows of data into a given table...
+
+                // Add Data To The Student Table: Populate the table of data
+
+                    // DML
+
+                        INSERT INTO Student 
+                        (ID, First_Name, Last_Name, ...)
+
+                        VALUES (value1, value2, value3, ...);
+
+                // Update Wrong Data Already Stored In Student Table In College Database With Correct Data:
+
+                    // DML
+
+                        UPDATE Student
+                        SET date_of_birth = 
+                        '2000-10-12'
+                        WHERE ID = 02;
+
+                // DELETE The Table Record For The Student With The ID Of 3:
+
+                    // DML
+
+                        DELETE FROM Student
+                        WHERE ID = 03;
+
+                        // all data on row 3 will be removed...
+
+                // Read Data Stored In Database: Query Data Within A Table...
+
+                    // DQL
+
+                        SELECT First_Name, Last_Name,
+                        FROM Student
+                        WHERE ID = '01';
+
+                        // You're now familiar with basics of SQL syntax and subsets...
+
+
+
+
+                        

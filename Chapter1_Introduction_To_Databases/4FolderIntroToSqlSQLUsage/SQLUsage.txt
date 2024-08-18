@@ -1,0 +1,80 @@
+// SQL Usage:
+
+    // Common SQL tasks:
+
+        CRUD Operations:
+
+            Create 
+            Read
+            Update
+            Delete
+
+                // or in technical terms create(add or insert data), read data, update existing data and delete data...
+
+Subsets or Sublanguages of SQL:
+
+    // DDL: Data Definition Language... // Used to create storage objects in a database, like tables... 
+
+        // CREATE command for creating database and in side that database, for creating tables too...
+
+            Examples:
+
+            1st Step:
+
+                // Create A Database:
+
+                    // CREATE DATABASE database_name;
+
+                // Create A College Database:
+
+                    // CREATE DATABASE college;
+
+            2nd Step:
+
+                // Create A Table:
+
+                    // CREATE TABLE table_name;
+
+                        // repeat these same steps for each new table you want to add to your database...
+
+                // Create A Table Named Student In College Database:
+
+                    // CREATE TABLE Student;
+
+        // ALTER command for modifying the structure of a table object in a database... for example you might need to modify the structure of a table by adding a new column etc...
+
+        // DROP command for remove an existing object(like a table) from a database...
+
+    // DML: Data Manipulation Language...
+
+        // Data manipulation commands are used to manipulate data in the database like inserting, updating or deleting data. Most CRUD operations fall under DML...
+
+            // DML INSERT command for insert(add) records of data into a database table...
+
+            // DML UPDATE command for edit data that already exists in a database table...
+
+            // DML DELETE command for deleting one or more rows of data from a table...
+
+    // So far you've learned how to add database objects and manage data within them, so how do you read or retrieve that data to read data stored in a database:
+
+        // DQL: Data Query Language... 
+
+            // To read data stored in a database...
+
+            DQL SELECT command to be able to retrieve data from one or multiple tables letting you specify the data fields that you want based on preferred filter criteria...
+
+        // DCL: Data Control Language... 
+
+            // To control access to the database...
+
+            DCL GRANT command to give users access privilidges to data
+            DCL REVOKE command to revert access privilidges already given to users in the database...
+
+            // SQL acts as the interface between the database and it's users...
+            // SQL operations in sub-languages...
+
+
+        
+
+                
+

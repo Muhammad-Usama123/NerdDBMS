@@ -1,0 +1,32 @@
+// What Is SQL?:
+
+    // At this point we probably know the basics of that how to store and manage data in databases, but how to interact with databases in order to work with data? And the answer to this question is that as a data engineer you can interact with databases by using Standard Query Language (SQL) also pronounced as sequel...
+
+        // Explain what SQL is?
+        // Outline the role of SQL in databases?
+
+    What type of Interactions do we need to do with databases as a database engineer?
+
+        // CRUD Operations:
+
+            // Create
+            // Read
+            // Update
+            // Delete...
+
+                // Some of the operations that you could carry out in the data might require you to create, read, update and delete data...
+
+    // SQL:
+
+        // Standard Language that can interact with structured data on databases(relational databases)...
+
+            // SQL And Relational Databases:
+
+                // MySQL
+                // PostgreSQL
+                // Oracle
+                // Microsoft SQL Server...
+
+                // Database Management System:
+
+                    // Changes SQL instructions into a form understood by the database...

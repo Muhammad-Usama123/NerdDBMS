@@ -1,0 +1,42 @@
+// Advantages Of SQL:
+
+    // You're now probably familiar with the basics of databases and you might even have come accross some simple SQL syntax... but why do developers use SQL to interact with databases... SQL is a popular language choice for databases because of the many advantages that it offers:
+
+        1) Identify the advantages of SQL
+        2) Demonstrate how the advantages of SQL assist with database tasks...
+
+            SQL is the interface or bridge between a relational database and it's users and offers web developers a wide range of advantages:
+
+                // User-Friendly:
+
+                    //  SQL requires very little coding skill to use... set of keywords... let's you write complex queries in a short space of time...
+
+                // Standard Language:
+
+                    // Compatible with all available relational databases...
+
+                // Portable Language:
+
+                    // SQL can be used on any hardware running any OS...
+
+                // Data Processing:
+
+                    // SQL processes large amounts of data quickly and Efficiently...
+
+                Comprehensive Language:
+
+                    // Covers all aspects of relational databases maybe... like:
+
+                        // Create databases...
+                        // Insert, Update And Delete data...
+                        // Retrieve and share data...
+                        // Manage database security...
+
+                    SQL Subsets:
+
+                        // DDL // Data Definition Language
+                        // DML // Data Manipulation Language
+                        // DQL // Data Query Language
+                        // DCL // Data Control Language
+
+                        
