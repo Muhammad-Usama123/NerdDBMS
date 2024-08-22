@@ -1,0 +1,72 @@
+// What are tables in databases?
+
+    // You're probably familiar with the basics of how databases store and interact with data, but how do they store all this data and present it in a logical way in the form of tables? ... 
+
+        // 1) Outline what a database table is at a conceptual level?
+        // 2) Explain how data is structured in a database table?
+
+            // Table is made up of rows and columns which hold data and a table is stored in a database that holds multiple tables, these tables are known as relations as they all relate to one another, in a more conceptual or logical sense a table is also known as an entity and in object oriented databases or oodb, an entity is an object that has attributes that are like columns or fields in a table, so in essence a table entity, an object all refers to the same concept... within every table are columns also sometimes called fields or attributes, each column or field has a unique name and datatype...
+
+            // A set of columns or fields form a row or in relational database terminology a row is known as a record...
+
+                // DataTypes:
+
+                    // Defines what type of value a table column can hold like integer, character, date and time and so on... tells SQL what data type to expect in each column...
+
+                    Data types can vary depending on the database system, for example, you might have different types from mySQL SQL server or access... always refer to the documentation of the relevant database system to check what datatypes it supports...
+
+                    // String 
+                    // Numeric
+                    // Date and time
+                    // Binary // to store images, files and other information...
+
+            // Another important concept related to tables is domains:
+
+                // Domains:
+
+                    // A domain is the set of legal values that can be assigned to an attribute, basically this means making sure that the values a field can hold are well defined, for example you can only place numbers in a numerical domain and you can only place characters or strings of characters in a string domain and each of these domains must include length values and other relevant rules that define it's function...
+
+            // Each row or record in a table is also uniquely identified by what's known as a primary key, a column in the table that has unique values will become the primary key of the table...(like value in ID column)... primary key to be a combination of columns if a single column doesn't possess unique values...
+
+            // Types Of Keys In A Relational Database's Tables:
+
+                // 1) Identify the main keys in tables in a relational database...
+                // 2) Explain the relationship between keys in a table... essentially relationships are established between tables with the use of keys...
+
+                // Two main concepts of relational database model on which relational database model is based on maybe:
+
+                    // 1) entities (defined as tables)
+                    // 2) relations that connect to related tables... (between keys in tables maybe)...
+
+                        // A table can contain a column with multi-value attribute (multi-value attribute type)  like we can add multiple values in a single instance of that table in that column... should be avoided in relational database design...
+
+                        // A table can contain a column with single-value attribute (simple single-value attribute type) like we can add single value in a single instance of that table in that column... recommended maybe in relational database design...
+
+                    // Key Attribute:
+
+                        // A key is the attribute in the table which contains unique values. Used to uniquely identify an individual record of data...
+
+                            // Candidate Key Attributes:
+
+                                // Any columns that have unique values in a table will be designated as candidate key attributes and the other columns can be designated as non-key attributes maybe...
+
+                            // Composite Key Attributes:
+
+                                A key composed of 2 or more attributes(columns) maybe to form a unique value in each new row (records or instances) of table. Mainly considered when there is no single column in a table with unique values...
+
+                            // Primary key:
+
+                                A candidate key which we select in our table as a primary key...
+
+                            // Alternate key attributes: Secondary keys
+
+                                // candidate keys that are not selected as the primary key...
+
+                            // Foreign Key:
+
+                                // An attribute that references a unique key in another table...
+
+                    Module Summary:
+
+                        key concepts of table like keys, datatypes, rows and columns...
+
