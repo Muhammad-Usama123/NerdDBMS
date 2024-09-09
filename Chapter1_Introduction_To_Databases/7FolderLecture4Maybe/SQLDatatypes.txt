@@ -1,0 +1,156 @@
+// SQL Datatypes:
+
+    // Datatypes:
+
+        // tell a database management system (such as MySQL) how to interpret the value of a column... When you create a table in a database you need to define column names and the datatype
+
+            // 1) Explain numeric datatypes...
+            // 2) Differentiate between integer and decimal datatypes...
+
+    // The most used datatypes are:
+
+        // Numeric Datatypes:
+
+            // The two most common numeric datatypes are:
+
+                // Integer:
+
+                    // Whole Number value... fractional numbers can be inserted but they will automatically get rendered up or down to the nearest whole number in the database... Product quantity is the example of Integer data type column...
+
+                    // Integer Datatypes Types: each type is intended to store minimum and a maximum number value
+
+                        // TINYINT:
+
+                            // very small integer number value where the maximum possible value can be 255.
+
+                        // INT:
+
+                            // large integer values... maximum value is over 4billion...
+
+                        // Positive: (in some dbms) not sure if works in decimal types too...
+
+                            // increases the maximum possible value limit by double maybe...
+
+                        // Negative: (in some dbms) not sure if works in decimal types too...
+
+                // Decimal:
+
+                    // Fractional Number value... total price is the example of fractional number(decimal datatype) datatype column... whole numbers can also be inserted but they will show as like 100.00 maybe...
+
+                // Example:
+
+                    // Product quantity, total price...
+
+        // String Datatypes: when the column accepts both numeric and alphabet characters or only text characters and special characters too... any type of data can be inserted into string datatype columns maybe... mixed type of characters...
+
+            // 1) Explain string datatypes...
+            // 2) Differentiate between CHAR and VARCHAR datatypes...
+
+            // CHAR:
+
+                // Characters of fixed length... The given length of characters is predetermined, means it can't be changed after declaration... the way of declaration of CHAR type column is, write CHAR first and then a pair of parenthesis and inside this pair parenthesis write the length of characters like CHAR(50)(means column only permits 50 characters of space in each field)... best option if you've a predefined size of character that you want to maintain... Username... once inserted a username after that can't be changed, means if user provides Mark123 as his username and we gave column CHAR(50) so even though this username contain 7 characters, because of this CHAR(50) type, this Mark123 will take space of 50 characters and after that can't be changed maybe...
+
+            // VARCHAR:
+
+                // Characters of variable length(means length can be changed and it's not fixed like CHAR datatype above...)... The given length of characters is variable... used when not sure how many characters might be inserted in the column field... type VARCHAR(50) in SQL... Student name column in the table can be the example of VARCHAR(50) (names of varying length...) like one instance of it is for example "Mark Kevin"... only occupies as much space as there are characters in their names...
+
+            // Example:
+
+                // customer Name column...
+
+            // Some more commonly used examples of string datatypes: // maybe available in some dbms and maybe in some not maybe...
+
+                // TINYTEXT:
+
+                    // less than 255 characters column... like short paragraphs maybe...
+
+                // TEXT:
+
+                    // TEXT is used to define columns of less than 65000 characters like an article...
+
+                // MEDIUMTEXT:
+
+                    // Columns of 16.7 million characters, for example the text of a book...
+
+                // LONGTEXT:
+
+                    up to 4gb size of text data...
+
+        // DateAndTime Datatypes:
+
+            // 
+
+                // Example:
+
+                    // Order Date...
+
+        // Binary Datatypes are also the datatype but maybe not mentioned in this lecture... for images, files and other information maybe...
+
+    // Default Values:
+
+        // To ensure the accuracy and reliability of the data in your database, you must limit the type of data that can go into your database table...
+
+            // 1) Explain the purpose of constraints...
+            // 1) Identify default constraints to set default values in a table...
+
+        // Database Constraints:
+
+            // Limit the type of data that can be stored in a table... this ensures that all data inserted into the table is accurate and reliable... if the database will detect a violation between the constraints and the data operations then it aborts these operations...
+
+            // Violation Example:
+
+                // An attempt to insert or upload invalid data to a table...
+
+            // Constraints:
+
+                // Applied at column level..
+
+            // Rule:
+
+                // Applies to a specific column... They can also be applied at a table level, for example:
+
+                    // Foreign Key:
+
+                        // Used to prevent actions that would destroy table links... more detail in later lessons maybe...
+
+            // Two of the most used database constraints are:
+
+                // NOT NULL:
+
+                    // Preserves empty value fields...
+
+                // DEFAULT:
+
+                    // Assigns default values...
+
+                // let's begin our exploration of default values with a not null constraint:
+
+                    // NOT NULL SQL CONSTRAINT:
+
+                        // Ensures data fields never left blank... let's explore this concept using the example of a table from an online store. The table store the records of customers in customer Id and customer name columns. These columns must always contain data, if there's no data or values inserted into either of these columns then the creation of a new customer record is aborted... The not null default value is implemented using a SQL statement... a typical not null SQL statement begins with the creation of a basic table in the database...
+
+                        // NOT NULL SQL STATEMENT:
+
+                            // CREATE TABLE Customer (
+                                // customer_id int NOT NULL,
+                                // customer_name varchar(255) NOT NULL,
+                            );
+
+                    // How DEFAULT CONSTRAINT Works In A Table:
+
+                        // Sets a default value for a column if no value is specified...
+
+                        // Let's find out how the default command is incorporated into a SQL statement:
+
+                            //  CREATE TABLE Player (
+                                name varchar(50) NOT NULL,
+                                city varchar(30) DEFAULT "Barcelona"
+                            );
+
+
+
+
+        
+
+            
+
