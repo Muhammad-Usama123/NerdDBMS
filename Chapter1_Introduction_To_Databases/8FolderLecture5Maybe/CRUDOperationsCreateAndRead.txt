@@ -1,0 +1,54 @@
+// CRUD Operations:
+
+    // Create And Read:
+
+        // Create And Drop(Delete) Database:
+
+            // hired by an online bookstore to build and maintain databases that can store information on millions of books and customers, but how do we even begin to create and alter databases that store constantly expanding information or process millions of orders from all over the world and the answer to these questions lies in SQL create and read commands....
+
+            // Creating a Database:
+
+                // before you create a database you 1st need a clear idea of its purpose for example if you're building a database for an online bookshop then your database needs to record data like:
+
+                    Book titles...
+                    Authors...
+                    Customers...
+                    Sales...
+
+                        // The data on these above topics from line 13 to line 16, must be stored and organized in relevant tables in a database. Users can then access, retrieve and update the data as needed...
+
+                            // SQL Database Table:
+
+                            |    Book Titles        |       Authors         |           Customers        |       Sales      |
+
+                             Database 101             Abcd Efgh Author       Abcd Efgh Customer           1234 units
+                             Ijkl Book                Ijkl Author            Ijkl Customer                5678 units
+                             Mnop Book                Mnop Author            Mnop Customer                9101 units
+                             Qrst Book                Qrst Author            Qrst Customer                2345 units
+                             Uvwx Book                Uvwx Author            Uvwx Customer                6789 units
+
+                            // SQL Create Database Statement:
+
+                                // CREATE DATABASE bookstore2_db; // 63 characters maximum for database names... // database name must be unique... // database name meaningful and relevant to our database work...
+
+                            // SQL Drop Or Remove Database Statement:
+
+                                // DROP DATABASE bookstore_db;
+
+                            // Create Table Statement:
+
+                                // How do you organize your data so that you can find exactly what you need and make sense of it? with SQL you can create table... before creating tables you must already have a database created...
+
+                                    // CREATE TABLE table_name (column1_name DATATYPE...);
+                                    // CREATE TABLE customers (
+                                        customerName VARCHAR(100),
+                                        customer phoneNumber INT
+                                    );
+
+                            // Alter Table Statement:
+
+                                // SQL Alter Statement:
+
+                                    // ALTER TABLE table_name ADD (column_name DATATYPE); // adding a new column in a table maybe...
+                                    // ALTER TABLE table_name DROP COLUMN column_name; // dropping(removing) a column from inside a table maybe...
+                                    // ALTER TABLE table_name MODIFY column_name VARCHAR(100); // changing the structure of a table maybe... // changing the varchar character limit of a column in a table from 50 to 100...
