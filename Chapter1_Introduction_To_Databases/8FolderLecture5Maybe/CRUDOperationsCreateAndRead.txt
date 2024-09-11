@@ -45,10 +45,72 @@
                                         customer phoneNumber INT
                                     );
 
-                            // Alter Table Statement:
+                            // Alter Table Statements:
 
-                                // SQL Alter Statement:
+                                // SQL Alter Statements:
 
                                     // ALTER TABLE table_name ADD (column_name DATATYPE); // adding a new column in a table maybe...
                                     // ALTER TABLE table_name DROP COLUMN column_name; // dropping(removing) a column from inside a table maybe...
                                     // ALTER TABLE table_name MODIFY column_name VARCHAR(100); // changing the structure of a table maybe... // changing the varchar character limit of a column in a table from 50 to 100...
+
+                            // Insert Statement:
+
+                                // In the example of college database we'll have to add new rows for every new student using INSERT SQL Statement... Insert data into tables...
+
+                                // SQL INSERT INTO Statement Syntax:
+
+                                    // INSERT INTO table_name (column1_name, column2_name, column3_name)
+                                    // VALUES (value1, value2, value3);
+
+                                    // ADD Multiple Rows Into A Table at the same time:
+
+                                        INSERT INTO table_name (column1_name, column2_name, column3_name)
+                                        VALUES 
+                                        (value1, value2, value3),
+                                        (value1, value2, value3),
+                                        (value1, value2, value3);
+
+                                        // it's important to use the correct format of year, month and day when entering dates in a table otherwise error and I can also use the CURRENT_DATE() function for entering the current date...
+
+                                // it's also possible to show existing data that is in the player table by executing the SELECT statement...
+
+                                // SQL SELECT Statement Syntax:
+
+                                    // SELECT * FROM table_name; // tells SQL to return all columns within the table...
+
+                            // SQL SELECT Statement: Query data from a table in your database... for example you might need to retrieve a list of names from a table or return a set of results from a math calculation or concatenation functions...
+
+                                // SQL SELECT Statement Syntax:
+
+                                    // Retrieve data from single column in a table:
+
+                                        // SELECT column_name FROM table_name; // semicolon not mandatory... but good practice maybe to mark the end of a SQL statement maybe...
+                                        // SELECT name FROM players; // it will display or return a set of result in which we'll see the names of all the players that are stored in the name column of players table within the soccer club database...
+
+                                    // Retrieve data from multiple columns in a table:
+
+                                        // SELECT name, level FROM players; // retrieving data from name and level columns of the players table... // Retrieving multiple columns data in single SELECT statement...
+
+                                    // Retrieve all data from all the columns of a table:
+
+                                        // There are 2 methods to do this:
+
+                                            // Method 1: // by mentioning all column names of a table in SQL SELECT statement...
+
+                                                SELECT ID, name, age, level FROM players;
+
+                                            // Method 2: // by just writing * with the SQL SELECT statement instead of writing all column names of a table in SQL SELECT statement...
+
+                                                SELECT * FROM players;
+
+
+                                    
+
+
+
+                            
+
+
+
+
+                            
