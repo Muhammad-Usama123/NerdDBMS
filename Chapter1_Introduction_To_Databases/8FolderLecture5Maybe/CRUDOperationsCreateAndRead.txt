@@ -103,6 +103,16 @@
 
                                                 SELECT * FROM players;
 
+                                // INSERT INTO SELECT Statement:
+
+                                    // When working with tables there might be instances where you need to retrieve information from one or more tables in order to populate columns in another table...
+
+                                    // INSERT INTO SELECT Statement Syntax:
+
+                                        // INSERT INTO target_tbl (column_name)
+                                           SELECT column_name
+                                           FROM source_tbl;
+
 
                                     
 
